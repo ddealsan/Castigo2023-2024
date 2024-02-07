@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class FactoresPrimos {
+public class Ejercicio7 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
