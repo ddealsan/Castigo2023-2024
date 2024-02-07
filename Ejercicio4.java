@@ -9,3 +9,11 @@ public class MinMaxListaNumeros {
         // Variables para almacenar el mínimo y el máximo
         int minimo = Integer.MAX_VALUE;
         int maximo = Integer.MIN_VALUE;
+        while (true) {
+            System.out.print("Introduce un número: ");
+            int numero = scanner.nextInt();
+
+            // Verificar si el número es negativo para finalizar
+            if (numero < 0) {
+                break;
+            }
