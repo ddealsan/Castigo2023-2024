@@ -1,4 +1,4 @@
-public class MaximosEnteros {
+public class Ejercicio2 {
     public static void main(String[] args) {
 
         char mayorChar = Character.MAX_VALUE;
