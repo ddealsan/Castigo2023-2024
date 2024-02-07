@@ -10,3 +10,18 @@ public class NumerosPrimos {
             System.out.print(primo + " ");
         }
     }
+    public static int[] obtenerPrimerosNPrimos(int N) {
+        int[] primos = new int[N];
+        int count = 0;
+        int num = 2; // Comenzamos desde el primer número primo
+
+        while (count < N) {
+            if (esPrimo(num)) {
+                primos[count] = num;
+                count++;
+            }
+            num++;
+        }
+
+        return primos;
+    }
