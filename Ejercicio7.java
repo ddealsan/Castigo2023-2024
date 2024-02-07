@@ -14,3 +14,29 @@ public class FactoresPrimos {
 
         // Imprimir los factores primos
         System.out.print(numero + " = ");
+        for (int i = 0; i < factoresPrimos.size(); i++) {
+            System.out.print(factoresPrimos.get(i));
+            if (i < factoresPrimos.size() - 1) {
+                System.out.print(" * ");
+            }
+        }
+
+        scanner.close();
+    }
+
+    // Función para descomponer un número en factores primos
+    public static ArrayList<Integer> descomponerEnFactoresPrimos(int numero) {
+        ArrayList<Integer> factoresPrimos = new ArrayList<>();
+        int divisor = 2;
+
+        while (numero > 1) {
+            while (numero % divisor == 0) {
+                factoresPrimos.add(divisor);
+                numero /= divisor;
+            }
+            divisor++;
+        }
+
+        return factoresPrimos;
+    }
+}
