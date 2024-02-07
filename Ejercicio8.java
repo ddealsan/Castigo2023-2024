@@ -46,3 +46,16 @@ public class EstadisticasArray {
         if (numeros.length == 0) {
             return 0;
         }
+        int suma = 0;
+        for (int numero : numeros) {
+            suma += numero;
+        }
+
+        return (double) suma / numeros.length;
+    }
+
+    // Función para calcular el mínimo de los elementos de un array
+    public static int calcularMinimo(int[] numeros) {
+        if (numeros.length == 0) {
+            return 0;
+        }
