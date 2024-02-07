@@ -27,3 +27,14 @@ public static int[] obtenerMultiplosDe5(int begin, int end) {
     }
     return result;
         }
+         }
+
+// Función para calcular la suma de los elementos de un array
+public static int calcularSuma(int[] array) {
+    int suma = 0;
+    for (int num : array) {
+        suma += num;
+    }
+    return suma;
+}
+}
