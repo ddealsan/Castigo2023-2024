@@ -13,3 +13,14 @@ public class TablasDeMultiplicar {
             System.out.println();
         }
     }
+    // Función para generar las tablas de multiplicar de los N primeros números
+    public static int[][] generarTablasDeMultiplicar(int n) {
+        int[][] tablas = new int[n][10];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < 10; j++) {
+                tablas[i][j] = (i + 1) * j;
+            }
+        }
+        return tablas;
+    }
+}
