@@ -1,4 +1,4 @@
-public class NumerosPrimos {
+public class Ejercicio6 {
     public static void main(String[] args) {
         // Definir la cantidad de números primos que se desean encontrar
         int N = 10;
