@@ -8,3 +8,4 @@ public class MaximosEnteros {
         int mayorInt = Integer.MAX_VALUE;
         System.out.println("El mayor número entero representable en un int es: " + mayorInt);
     }
+    }
