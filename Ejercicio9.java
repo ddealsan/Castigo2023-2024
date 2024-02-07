@@ -18,3 +18,25 @@ public class ProductoEscalar {
 
         scanner.close();
     }
+    public static int[] obtenerVector(Scanner scanner, int dimension) {
+        int[] vector = new int[dimension];
+        System.out.println("Introduce los elementos del vector (separados por espacios):");
+        for (int i = 0; i < dimension; i++) {
+            vector[i] = scanner.nextInt();
+        }
+        return vector;
+    }
+
+    // Función para calcular el producto escalar de dos vectores
+    public static int calcularProductoEscalar(int[] vector1, int[] vector2) {
+        if (vector1.length != vector2.length) {
+            throw new IllegalArgumentException("Los vectores deben tener la misma dimensión");
+        }
+
+        int productoEscalar = 0;
+        for (int i = 0; i < vector1.length; i++) {
+            productoEscalar += vector1[i] * vector2[i];
+        }
+        return productoEscalar;
+    }
+}
