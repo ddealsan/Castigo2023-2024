@@ -59,3 +59,29 @@ public class EstadisticasArray {
         if (numeros.length == 0) {
             return 0;
         }
+        int minimo = numeros[0];
+        for (int i = 1; i < numeros.length; i++) {
+            if (numeros[i] < minimo) {
+                minimo = numeros[i];
+            }
+        }
+
+        return minimo;
+    }
+
+    // Función para calcular el máximo de los elementos de un array
+    public static int calcularMaximo(int[] numeros) {
+        if (numeros.length == 0) {
+            return 0;
+        }
+
+        int maximo = numeros[0];
+        for (int i = 1; i < numeros.length; i++) {
+            if (numeros[i] > maximo) {
+                maximo = numeros[i];
+            }
+        }
+
+        return maximo;
+    }
+}
