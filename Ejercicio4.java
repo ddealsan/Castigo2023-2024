@@ -17,3 +17,22 @@ public class MinMaxListaNumeros {
             if (numero < 0) {
                 break;
             }
+            if (numero < minimo) {
+                minimo = numero;
+            }
+            if (numero > maximo) {
+                maximo = numero;
+            }
+        }
+
+        // Verificar si se introdujeron números positivos
+        if (minimo == Integer.MAX_VALUE && maximo == Integer.MIN_VALUE) {
+            System.out.println("No se han introducido números positivos.");
+        } else {
+            System.out.println("El mínimo es: " + minimo);
+            System.out.println("El máximo es: " + maximo);
+        }
+
+        scanner.close();
+    }
+}
